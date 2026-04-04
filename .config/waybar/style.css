@@ -1,54 +1,54 @@
 @import "mocha.css";
 
 * {
-    font-family: "JetBrains Mono Nerd Font";
-    font-size:20px;
-    font-weight: bold;
+    	font-family: "JetBrains Mono Nerd Font Propo";
+    	font-size:20px;
+    	font-weight: bold;
 }
 
 window#waybar {
-    background: transparent;
-    color: @overlay0;
-    transition-property: background-color;
-    transition-duration: 0.1s;
+    	background: transparent;
+    	color: @overlay0;
+    	transition-property: background-color;
+    	transition-duration: 0.1s;
 }
 
 #window {
-    margin: 5px;
-    padding-left: 0px;
-    padding-right: 0px;
-    color: @teal;
+    	margin: 5px;
+    	padding-left: 0px;
+    	padding-right: 0px;
+    	color: @teal;
 }
 
 button {
-    box-shadow: inset 0 -3px transparent;
-    border: none;
-    border-radius: 0;
+    	box-shadow: inset 0 -3px transparent;
+    	border: none;
+    	border-radius: 0;
 }
 
 button:hover {
-    background: inherit;
-    color: @pink;
+    	background: inherit;
+    	color: @pink;
 }
 
 #workspaces button {
-    padding: 1px 1px;
+    	padding: 1px 1px;
 }
 
 #workspaces button.focused {
-    color: @teal;
+    	color: @teal;
 }
 
 #workspaces button.active {
-    color: @pink;
+    	color: @pink;
 }
 
 #workspaces button.urgent {
-    background-color: @maroon;
+    	background-color: @maroon;
 }
 
 #tray {
-    margin: 5px;
+    	margin: 5px;
 }
 
 #pulseaudio,
@@ -61,43 +61,31 @@ button:hover {
 #mode,
 #scratchpad,
 #clock {
-    color: @blue;
-    margin: 10px;
+    	color: @teal;
+    	margin: 10px;
 }
 
 #pulseaudio {
-    color: @blue;
-    margin: 5px;
+	color: @blue;
+    	margin-right: 15px;
 }
 
 #network {
-    color: @yellow;
-    margin: 5px;
+    	color: @red;
+    	margin-right: 5px;
 }
 
 #battery {
-    color: @green;
-    margin: 5px;
-    margin-right: 10px;
-}
-
-#custom-notification {
-    font-family: "JetBrains Mono Nerd Font";
-    color: @blue;
-    margin-right: 15px;
+    	color: @green;
+    	margin-right: 10px;
 }
 
 tooltip {
-    border-radius: 0px;
-    background-color: @mantle;
+    	border-radius: 0px;
+    	background-color: @mantle;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 15px;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 5px;
 }
