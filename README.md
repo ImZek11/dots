@@ -11,7 +11,7 @@
 
   **walker**
 
-  **nvim**
+  **nvim (with lazy.nvim)**
 
   **btop & impala & wiremix**
 
