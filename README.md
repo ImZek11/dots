@@ -1,6 +1,6 @@
 # epik dots by zek11
 
-## packages:
+## pacman packages:
   **waybar**
   
   **yazi**
@@ -8,11 +8,18 @@
   **swaync**
   
   **hyprshot & hyprpaper & hypridle & hyprlock**
-
-  **walker**
+  
+  **polkit-gnome**
 
   **nvim (with lazy.nvim)**
 
   **btop & impala & wiremix**
+
+  **nwg-look**
+
+ ## AUR packages used:
+   **walker**
+   
+   **yay**
 
   
