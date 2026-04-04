@@ -61,12 +61,8 @@ button:hover {
 #mode,
 #scratchpad,
 #clock {
-    color: @flamingo;
+    color: @blue;
     margin: 10px;
-}
-
-#clock.date {
-    color: @mauve;
 }
 
 #pulseaudio {
