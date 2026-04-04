@@ -6,7 +6,8 @@
   "modules-right": [
     "network",
     "pulseaudio",
-    "battery",
+    "backlight",
+    "battery"
   ],
   "hyprland/workspaces": {
       "persistent-workspaces": {
@@ -17,8 +18,8 @@
       },
       "format": " {icon} ",
       "format-icons": {
-          "default": "",
-      },
+          "default": ""
+      }
   },
   "clock": {
     "format": "{:%a %d %b - %H:%M}",
@@ -33,10 +34,14 @@
          }
       }
   },
+  "backlight": {
+    "format": "{icon}{percent}%",
+    "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
+  },
   "battery": {
     "states": {
       "warning": 30,
-      "critical": 15,
+      "critical": 15
     },
     "format": "{icon}{capacity}%",
     "format-warning": "{icon}{capacity}%",
@@ -46,7 +51,7 @@
     "format-alt": "{icon}{time}",
     "format-full": "{capacity}%",
     "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{time}",
+    "tooltip-format": "{time}"
   },
   "network": {
     "format": "{ifname}",
@@ -60,21 +65,14 @@
     "tooltip-format-ethernet": "{ifname}, {ipaddr}, {bandwidthDownBytes}, {bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 40,
-    "on-click": "kitty impala",
+    "on-click": "kitty impala"
   },
   "pulseaudio": {
     "format": "{icon}{volume}%",
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""],
+      "default": ["", "", ""]
     },
-    "on-click": "kitty wiremix",
-  },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true,
-  },
+    "on-click": "kitty wiremix"
+  }
 }
