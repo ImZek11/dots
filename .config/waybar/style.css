@@ -67,7 +67,7 @@ button:hover {
 
 #pulseaudio {
 	color: @blue;
-    	margin-right: 10px;
+    	margin-right: 5px;
 }
 
 #network {
@@ -77,12 +77,12 @@ button:hover {
 
 #backlight {
 	color: @yellow;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 #battery {
     	color: @green;
-    	margin-right: 20px;
+    	margin-right: 25px;
 }
 
 tooltip {
