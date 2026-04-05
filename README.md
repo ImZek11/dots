@@ -17,6 +17,8 @@
 
   **nwg-look**
 
+  **cava**
+
  ## AUR packages used:
    **walker**
    
