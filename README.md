@@ -19,6 +19,10 @@
 
   **cava**
 
+  **peaclock**
+
+  **rmpc**
+
  ## AUR packages used:
    **walker**
    
