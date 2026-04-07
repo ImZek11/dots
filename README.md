@@ -13,19 +13,15 @@
 
   **nvim (with lazy.nvim)**
 
-  **btop & impala & wiremix**
+  **btop & impala & wiremix & cava & rmpc**
 
   **nwg-look**
-
-  **cava**
-
-  **peaclock**
-
-  **rmpc**
 
  ## AUR packages used:
    **walker**
    
    **yay**
+
+   **peaclock**
 
   
