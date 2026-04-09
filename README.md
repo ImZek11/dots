@@ -2,6 +2,8 @@
 
 ## pacman packages:
   **waybar**
+
+  **fastfetch**
   
   **yazi**
   
@@ -24,4 +26,4 @@
 
    **peaclock**
 
-  
+  **oh-my-posh**
