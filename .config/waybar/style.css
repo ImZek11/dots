@@ -7,10 +7,9 @@
 }
 
 window#waybar {
-    	background: transparent;
-    	color: @overlay0;
-    	transition-property: background-color;
-    	transition-duration: 0.1s;
+    	background: @base;
+        border-top: solid @blue 4px;
+        border-bottom: solid @blue 4px;
 }
 
 #window {
