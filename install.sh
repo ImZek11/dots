@@ -12,7 +12,7 @@ if [[ "$choice" == "y" ]]; then
     read -p "Do you want to continue with the installation? (y/n): " choice2
     choice2=${choice2,,}
     if [[ "$choice2" == "y" ]]; then
-        yay -S hyprland kitty sddm waybar fastfetch yazi swayn hyprshot hyprpaper hypridle hyprlock polkit-gnome nvim btop impala wiremix cava rmpc nwg-look mpd mpc walker peaclock oh-my-posh
+        yay -S hyprland kitty sddm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra waybar fastfetch yazi swayn hyprshot hyprpaper hypridle hyprlock polkit-gnome nvim btop impala wiremix cava rmpc nwg-look mpd mpc walker peaclock oh-my-posh
         echo "Enabling SDDM"
         sudo systemctl enable sddm
         echo "Programs installed and setup succesfully!"
