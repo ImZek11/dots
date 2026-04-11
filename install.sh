@@ -13,11 +13,19 @@ if [[ "$choice" == "y" ]]; then
     choice2=${choice2,,}
     if [[ "$choice2" == "y" ]]; then
         yay -S hyprland kitty fish sddm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra elephant-bin elephant-providerlist-bin elephant-desktopapplications-bin waybar fastfetch yazi swayn hyprshot hyprpaper hypridle hyprlock polkit-gnome nvim btop impala wiremix cava rmpc nwg-look mpd mpc walker peaclock oh-my-posh firefox
-        echo "Enabling Services"
+        
+        echo "Enabling Services..."
         sudo systemctl enable sddm
         sudo systemctl enable mpd
         sudo systemctl start mpd
-        echo "Programs installed and services enabled succesfully!"
+
+        # SDDM Configuration Replacement
+        echo "Configuring SDDM Autologin..."
+        SDDM_CONF_DIR="/etc/sddm.conf.d"
+        sudo mkdir -p "$SDDM_CONF_DIR"
+        echo -e "[Autologin]\nRelogin=true\nSession=\nUser=" | sudo tee "$SDDM_CONF_DIR/default.conf" > /dev/null
+
+        echo "Programs installed, services enabled, and SDDM configured successfully!"
 
         # Third prompt
         read -p "Do you want to proceed with theme installation? (y/n): " choice3
@@ -39,7 +47,7 @@ if [[ "$choice" == "y" ]]; then
             fi
 
         elif [[ "$choice3" == "n" ]]; then
-            echo "Installation cancelled."
+            echo "Theme installation skipped."
         else
             echo "Invalid input. Please enter 'y' or 'n'."
         fi
