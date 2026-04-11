@@ -12,7 +12,7 @@ if [[ "$choice" == "y" ]]; then
     read -p "Do you want to continue with the installation? (y/n): " choice2
     choice2=${choice2,,}
     if [[ "$choice2" == "y" ]]; then
-        yay -S hyprland kitty fish sddm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra elephant-bin elephant-providerlist-bin elephant-desktopapplications-bin waybar fastfetch yazi swayn hyprshot hyprpaper hypridle hyprlock polkit-gnome nvim btop impala wiremix cava rmpc nwg-look mpd mpc walker peaclock oh-my-posh
+        yay -S hyprland kitty fish sddm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra elephant-bin elephant-providerlist-bin elephant-desktopapplications-bin waybar fastfetch yazi swayn hyprshot hyprpaper hypridle hyprlock polkit-gnome nvim btop impala wiremix cava rmpc nwg-look mpd mpc walker peaclock oh-my-posh firefox
         echo "Enabling Services"
         sudo systemctl enable sddm
         sudo systemctl enable mpd
