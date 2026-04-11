@@ -18,13 +18,7 @@ if [[ "$choice" == "y" ]]; then
         sudo systemctl enable sddm
         sudo systemctl enable mpd
         sudo systemctl start mpd
-
-        # SDDM Configuration Replacement
-        echo "Configuring SDDM Autologin..."
-        SDDM_CONF_DIR="/etc/sddm.conf.d"
-        sudo mkdir -p "$SDDM_CONF_DIR"
-        echo -e "[Autologin]\nRelogin=true\nSession=\nUser=" | sudo tee "$SDDM_CONF_DIR/default.conf" > /dev/null
-
+        
         echo "Programs installed, services enabled, and SDDM configured successfully!"
 
         # Third prompt
