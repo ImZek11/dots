@@ -1,7 +1,7 @@
 # epik dots by zek11
 
 ## pacman packages:
-  **waybar**
+  **waybar (with elephant)**
 
   **fastfetch**
   
