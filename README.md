@@ -24,7 +24,7 @@
   **run the installer**
   ```
   chmod +x install.sh
-  /.install.sh
+  ./install.sh
   ```
  **step 4:**
 
