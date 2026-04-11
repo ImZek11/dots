@@ -12,7 +12,6 @@ ansi_art1='
                                                                  '
 clear
 echo -e "\n$ansi_art\n"
-echo -e "\n$ansi_art1\n"
 
 read -p "Start installation? (y/n): " choice
 choice=${choice,,}
