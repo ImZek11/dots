@@ -13,9 +13,11 @@ if [[ "$choice" == "y" ]]; then
     choice2=${choice2,,}
     if [[ "$choice2" == "y" ]]; then
         yay -S hyprland kitty fish sddm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra elephant-bin elephant-providerlist-bin elephant-desktopapplications-bin waybar fastfetch yazi swayn hyprshot hyprpaper hypridle hyprlock polkit-gnome nvim btop impala wiremix cava rmpc nwg-look mpd mpc walker peaclock oh-my-posh
-        echo "Enabling SDDM"
+        echo "Enabling Services"
         sudo systemctl enable sddm
-        echo "Programs installed and setup succesfully!"
+        sudo systemctl enable mpd
+        sudo systemctl start mpd
+        echo "Programs installed and services enabled succesfully!"
 
         # Third prompt
         read -p "Do you want to proceed with theme installation? (y/n): " choice3
