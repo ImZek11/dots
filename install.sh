@@ -23,7 +23,7 @@ if [[ "$choice" == "y" ]]; then
         read -p "Do you want to proceed with theme installation? (y/n): " choice3
         choice3=${choice3,,}
         if [[ "$choice3" == "y" ]]; then
-            yay -S catppuccin-gtk-theme catppuccin-cursors-mocha
+            yay -S catppuccin-gtk-theme-mocha catppuccin-cursors-mocha
             echo "Installation fully completed!"
 
             # Fourth prompt: reboot
