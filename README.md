@@ -1,29 +1,30 @@
 # epik dots by zek11
 
-## pacman packages:
-  **waybar (with elephant)**
-
-  **fastfetch**
+## RECOMMENDED TO BE DONE ON A:
+  Minimal Arch Installation
+## how to install:
+  **step 1:**
   
-  **yazi**
-  
-  **swaync**
-  
-  **hyprshot & hyprpaper & hypridle & hyprlock**
-  
-  **polkit-gnome**
+  **install git and yay**
+  ```
+  sudo pacman -Syu --needed git base-devel
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
+  ```
+  **step 2:**
 
-  **nvim (with lazy.nvim)**
+  **clone the repo**
+  ```
+  git clone https://ImZek11/dots11.git
+  cd dots11
+  ```
+  **step 3:**
 
-  **btop & impala & wiremix & cava & rmpc**
+  **run the installer**
+  ```
+  sudo ./install.sh
+  ```
+ **step 4:**
 
-  **nwg-look**
-
- ## AUR packages used:
-   **walker**
-   
-   **yay**
-
-   **peaclock**
-
-  **oh-my-posh**
+ **Just reboot as the installation prompts you or do some post configuration**
