@@ -5,4 +5,4 @@ mkdir -p ~/.config
 mkdir -p ~/Pictures
 mv -n ~/dots11/.config/* ~/.config/ 2>/dev/null || true
 mv -n ~/dots11/Pictures/* ~/Pictures/ 2>/dev/null || true
-echo "Configs and Pictures installed successfully!"
+echo "Files configuration completed!"
