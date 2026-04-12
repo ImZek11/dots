@@ -56,7 +56,7 @@ if prompt_yes_no "Proceed with theme installation?"; then
    ▄████▀     ███    █▀      ██████████  ▀█   ███   █▀    ██████████       ▄████████▀    ██████████    ▄████▀   ████████▀   ▄████▀      
                                                                                                                                         
 '
-  run_script ~/dots11/scripts/install/03-theme.sh "Install theme"
+  run_script ~/dots11/scripts/install/03-themes.sh "Install theme"
 else
   echo "Theme installation skipped"
 fi
