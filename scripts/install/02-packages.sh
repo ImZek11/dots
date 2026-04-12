@@ -13,4 +13,4 @@ echo "Enabling services..."
 sudo systemctl enable mpd
 sudo systemctl start mpd
 
-echo "Programs installed, services enabled successfully"
+echo "Program installations and service activations completed!"
