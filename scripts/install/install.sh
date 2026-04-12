@@ -73,8 +73,11 @@ echo '
  ▄████▀       ▀██████▀   ▄████████▀     ▄████▀        █▀    ▀█   █▀   ▄████████▀     ▄████▀     ███    █▀  █████▄▄██ █████▄▄██ 
                                                                                                            ▀         ▀        
 '
-
-run_script ~/dots11/scripts/install/04-post-install.sh "Post-install"
+if prompt_yes_no "Proceed with post installation?"; then
+  run_script ~/dots11/scripts/install/04-post-install.sh "Post-install"
+else
+  echo "Post installation skipped"
+fi
 
 clear
 echo '
