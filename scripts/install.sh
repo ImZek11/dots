@@ -20,7 +20,7 @@ if prompt_yes_no "Start installation?"; then
 ████████▀   ▀██████▀   ▀█   █▀    ███        █▀     ████████▀         ███        █▀   █████▄▄██   ██████████  ▄████████▀  
                                                                                       ▀                                   
 '
-  run_script ./install/01-copy-configs.sh "Copy configs"
+  run_script ~/dots11/scripts/install/01-copy-configs.sh "Copy configs"
 else
   echo "Installation cancelled"; exit 0
 fi
@@ -38,7 +38,7 @@ if prompt_yes_no "Continue with package installation?"; then
  ▄████▀        ███    █▀  ████████▀    ███   ▀█▀   ███    █▀    ████████▀    ██████████  ▄████████▀  
                                        ▀                                                             
 '
-  run_script ./install/02-packages.sh "Install packages and enable services"
+  run_script ~/dots11/scripts/install/02-packages.sh "Install packages and enable services"
 else
   echo "Package installation skipped"; exit 0
 fi
@@ -56,7 +56,7 @@ if prompt_yes_no "Proceed with theme installation?"; then
    ▄████▀     ███    █▀      ██████████  ▀█   ███   █▀    ██████████       ▄████████▀    ██████████    ▄████▀   ████████▀   ▄████▀      
                                                                                                                                         
 '
-  run_script ./install/03-theme.sh "Install theme"
+  run_script ~/dots11/scripts/install/03-theme.sh "Install theme"
 else
   echo "Theme installation skipped"
 fi
@@ -74,7 +74,7 @@ if prompt_yes_no "Reboot now?"; then
   ███    ███   ██████████ ▄█████████▀   ▀██████▀   ▀██████▀     ▄████▀   
   ███    ███                                                             
 '
-  run_script ./install/04-reboot.sh "Reboot"
+  run_script ~/dots11/scripts/install/04-reboot.sh "Reboot"
 else
   echo "Reboot cancelled. You can reboot later if needed."
 fi
