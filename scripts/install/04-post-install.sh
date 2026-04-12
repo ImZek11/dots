@@ -5,4 +5,4 @@ rm -rf ~/.cargo
 rm -rf ~/.config/go
 sudo rm -rf /usr/share/applications/*
 sudo cp ~/dots11/.desktop/* /usr/share/applications/
-echo "Post-install completed successfully."
+echo "Post-installation completed!"
