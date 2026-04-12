@@ -1,3 +1,9 @@
+if status is-login
+    if test -z "$DISPLAY" -a (tty) = "/dev/tty1"
+        exec uwsm start hyprland.desktop
+    end
+end
+
 if status is-interactive
 # Commands to run in interactive sessions can go here
     fastfetch
