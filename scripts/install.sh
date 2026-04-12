@@ -2,7 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 # shellcheck source=/dev/null
-source ./install/common.sh
+source ~/dots11/scripts/install
 
 clear
 echo -e "\n$ansi_art1\n"
