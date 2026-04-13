@@ -4,6 +4,7 @@ set -euo pipefail
 # 1. Create necessary directories
 mkdir -p ~/.config/fish
 mkdir -p ~/Pictures
+mkdir -p ~/Music
 
 # 2. Move configs and pictures (non-overwriting)
 mv -n ~/dots11/.config/* ~/.config/ 2>/dev/null || true
