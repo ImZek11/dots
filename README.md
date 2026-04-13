@@ -38,4 +38,4 @@
   ```
  **step 4:**
 
- **Just reboot as the installation prompts you or do some post configuration**
+ **Now you can safely reboot, as the installation prompts you when all the steps are completed by your choice!**
