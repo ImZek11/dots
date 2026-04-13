@@ -33,7 +33,7 @@
   **run the installer**
   ```
   chmod +x scripts/*
-  cd scripts
+  cd scripts/install
   ./install.sh
   ```
  **step 4:**
