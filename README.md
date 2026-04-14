@@ -1,4 +1,4 @@
-
+https://raw.githubusercontent.com/ImZek11/dots11/refs/heads/main/resources/dots11.png
 
 ## RECOMMENDED TO BE DONE ON A:
   Minimal Arch Installation
