@@ -17,15 +17,14 @@
   **clone the repo**
   ```
   git clone https://ImZek11/dots11.git
-  cd dots11
   ```
   **step 3:**
 
   **run the installer**
   ```
-  chmod +x scripts/*
-  cd scripts/install
-  ./install.sh
+  cd dots11/scripts
+  chmod +x *
+  ./install.sh  
   ```
  **step 4:**
 
