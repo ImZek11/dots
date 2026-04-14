@@ -14,7 +14,7 @@ layout="$(printf '%s' "$layout" | tr 'A-Z' 'a-z' | tr -d '[:space:]')"
 [ -z "$layout" ] && { echo "Invalid layout."; exit 1; }
 
 # 3) Ensure target exists
-TARGET="$HOME/.config/hypr/modules/input.conf"
+TARGET="$HOME/dots11/.config/hypr/modules/input.conf"
 if [ ! -f "$TARGET" ]; then
   echo "Error: $TARGET not found" >&2
   exit 1
