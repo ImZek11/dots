@@ -5,12 +5,9 @@
 ## how to install:
   **step 1:**
   
-  **install git and yay**
+  **install git**
   ```
-  sudo pacman -Syu --needed git base-devel
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
-  makepkg -si
+  sudo pacman -Syu --needed git base-devel git
   ```
   **step 2:**
 
