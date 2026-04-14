@@ -20,7 +20,7 @@ if prompt_yes_no "Start installation?"; then
 ████████▀   ▀██████▀   ▀█   █▀    ███        █▀     ████████▀         ███        █▀   █████▄▄██   ██████████  ▄████████▀  
                                                                                       ▀                                   
 '
- run_script ~/dots11/scripts/01* "Copy configs"
+ run_script ~/dots11/scripts/01-copy* "Copy configs"
 else
   echo "Installation cancelled"; exit 0
 fi
