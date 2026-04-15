@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
 echo "Rebooting..."
-rm -- "$0"
+rm -rf ~/dots11
 sudo reboot
