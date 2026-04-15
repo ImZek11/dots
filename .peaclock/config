@@ -1,0 +1,42 @@
+# ---------------------------------------------------------
+# PEACLOCK CLEAN SOLID CONFIG
+# ---------------------------------------------------------
+
+# VISUAL AND MODE
+mode clock
+view digital
+set hour-24 on
+set seconds on
+set date on
+date '%b %d, %Y'
+
+# SCREEN BEHAVIOR
+set auto-size on
+set auto-ratio on
+ratio 2 1
+
+# BLOCK STYLE (The secret to removing the dots)
+# 'fill' defines what fills the active number
+# 'fill-inactive' empty removes the gray background dots
+fill '█'
+fill-inactive ' '
+fill-colon '█'
+
+# COLORS
+# We use clear on the background to avoid creating gray boxes
+style active-fg #89b4fa
+style active-bg clear
+style inactive-fg clear
+style inactive-bg clear
+style colon-fg #94e2d5
+style colon-bg clear
+style date #89dceb
+style background clear
+
+# REFRESH RATES
+rate-refresh 1000
+rate-input 50
+
+# TIMER
+timer 10m:0s
+timer-exec 'notify-send -a peaclock "Timer Finished!"'
