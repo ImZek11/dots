@@ -76,7 +76,16 @@ button:hover {
 
 #battery {
     	color: @green;
-    	margin-right: 25px;
+    	margin-right: 15px;
+}
+
+#power-profiles-daemon {
+        margin-right: 15px;
+        color: @red;
+}
+
+#power-profiles-daemon.perfomance {
+    color: @yellow;
 }
 
 tooltip {
