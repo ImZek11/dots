@@ -6,7 +6,8 @@
   "modules-right": [
     "pulseaudio",
     "backlight",
-    "battery"
+    "battery",
+    "power-profiles-daemon"
   ],
   "hyprland/workspaces": {
       "persistent-workspaces": {
@@ -59,5 +60,16 @@
       "default": ["", "", ""]
     },
     "on-click": "kitty wiremix"
+  },
+  "power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
   }
+},
 }
