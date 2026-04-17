@@ -69,11 +69,6 @@ button:hover {
     	margin-right: 5px;
 }
 
-#network {
-    	color: @red;
-    	margin-right: 5px;
-}
-
 #backlight {
 	color: @yellow;
 	margin-right: 15px;
