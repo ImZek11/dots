@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 packages=(
-  hyprland kitty fish uwsm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji
+  hyprland kitty fish uwsm xdg-desktop-portal-gtk ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji
   noto-fonts-extra elephant-bin elephant-providerlist-bin elephant-desktopapplications-bin
   waybar fastfetch yazi swaync hyprshot hyprpaper hypridle hyprlock polkit-gnome nvim btop
   impala wiremix cava rmpc nwg-look mpd mpc walker peaclock oh-my-posh firefox
