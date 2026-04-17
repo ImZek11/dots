@@ -4,7 +4,6 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
-    "network",
     "pulseaudio",
     "backlight",
     "battery"
@@ -52,20 +51,6 @@
     "format-full": "{capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{time}"
-  },
-  "network": {
-    "format": "{ifname}",
-    "interval": 2,
-    "format-wifi": "{essid}",
-    "format-ethernet": "{ifname}{bandwidthDownBits}",
-    "format-linked": "{ifname} (No IP) no_entry",
-    "format-disconnected": "",
-    "tooltip-format": "{ifname}",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) , {ipaddr}, {bandwidthDownBytes}, {bandwidthUpBytes}",
-    "tooltip-format-ethernet": "{ifname}, {ipaddr}, {bandwidthDownBytes}, {bandwidthUpBytes}",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 40,
-    "on-click": "kitty impala"
   },
   "pulseaudio": {
     "format": "{icon}{volume}%",
