@@ -27,6 +27,4 @@ EOF
 
 sudo systemctl disable sddm.service 2>/dev/null || true
 
-ya pkg add yazi-rs/plugins:mount
-
 echo "Post-installation completed."
