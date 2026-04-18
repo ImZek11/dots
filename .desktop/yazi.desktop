@@ -1,11 +1,10 @@
 [Desktop Entry]
 Name=Yazi
 Icon=yazi
-Comment=Blazing fast terminal file manager written in Rust, based on async I/O
-Terminal=true
+Comment=Terminal file manager
+Terminal=false
 TryExec=yazi
-Exec=yazi %u
+Exec=kitty --class yazi -e yazi %U
 Type=Application
-MimeType=inode/directory
+MimeType=inode/directory;
 Categories=Utility;Core;System;FileTools;FileManager;ConsoleOnly
-Keywords=File;Manager;Explorer;Browser;Launcher
