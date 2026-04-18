@@ -16,11 +16,8 @@ echo "Configuring TTY1 Autologin & Fish Shell..."
 # Detect the real user even if running via sudo
 REAL_USER=${SUDO_USER:-$USER}
 
-# 1. Change the default shell to Fish for the user
-# Make sure 'fish' is installed in your 02-packages.sh
 sudo chsh -s $(which fish) "$REAL_USER"
 
-# 2. Create the Getty override for Autologin on TTY1
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d/
 cat <<EOF | sudo tee /etc/systemd/system/getty@tty1.service.d/autologin.conf
 [Service]
@@ -28,7 +25,6 @@ ExecStart=
 ExecStart=-/usr/bin/agetty --autologin $REAL_USER --noclear %I \$TERM
 EOF
 
-# 3. Disable SDDM (if present) to prevent conflicts
 sudo systemctl disable sddm.service 2>/dev/null || true
 
 echo "Post-installation completed."
