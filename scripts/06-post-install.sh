@@ -27,6 +27,11 @@ EOF
 
 sudo systemctl disable sddm.service 2>/dev/null || true
 
+sudo systemctl enable mpd
+sudo systemctl start mpd
+sudo systemctl enable power-profiles-daemon
+sudo systemctl start power-profiles-daemon
+
 ya pkg add yazi-rs/plugins:mount
 ya pkg add yazi-rs/plugins:zoom
 
