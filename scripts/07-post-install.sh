@@ -34,5 +34,7 @@ sudo systemctl start power-profiles-daemon
 
 ya pkg add yazi-rs/plugins:mount
 ya pkg add yazi-rs/plugins:zoom
+ya pkg add yazi-rs/plugins:smart-enter
+ya pkg add yazi-rs/plugins:no-status
 
 echo "Post-installation completed."
