@@ -1,0 +1,5 @@
+[indicator]
+# These characters create sharp, square edges for the indicator bar
+padding = { open = "▐", close = "▌" }
+[manager]
+border_symbol = "│"
