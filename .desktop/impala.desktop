@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Impala
+Comment=TUI for managing wifi
+Icon=network-wired
+Terminal=true
+TryExec=impala
+Exec=impala
+Type=Application
+Categories=Wifi;Network
+Keywords=Wifi;Network
